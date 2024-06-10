@@ -27,12 +27,16 @@ nav a {
     font-size: 18px;
 }
 
-.text_anim {
+.text_anim_container {
     font-size:18px;
     background-color: rgb(35, 140, 201);
     color: white;
     border-top: 3px solid white;
     border-bottom: 3px solid white;
+}
+
+.text_anim {
+    animation: text-slide 10s ease infinite;
 }
 
 .container {
@@ -95,6 +99,8 @@ footer {
    color: white;
    padding: 15px 30px;
    background: linear-gradient(to top, rgb(35, 140, 201),rgb(40, 231, 183));
+   display: flex;
+   justify-content: space-between;
 }
 
 @media screen and (min-width:768px) {
@@ -130,5 +136,32 @@ footer {
 
     .content_p {
         font-size: 20px;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+    }
+
+    nav a {
+        margin: auto 30px;
+    }
+    
+    footer p {
+        font-size: 20px;
+    }
+
+    i {
+        font-size: 30px;
+        margin: 0 15px;
+    }
+}
+
+@keyframes text-slide {
+    0% {
+        transform: translateX(900px);
+    }
+    100% {
+        transform: translateX(-1500px);
     }
 }
