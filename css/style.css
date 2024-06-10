@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 15px;
+    background: linear-gradient(to top, rgb(35, 140, 201),rgb(40, 231, 183));
+}
+
+.tittle_container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 55px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    margin-top: 3px;
+    font-size: 18px;
+}
+
+.text_anim {
+    font-size:18px;
+    background-color: rgb(35, 140, 201);
+    color: white;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.first_content, .second_content, .third_content {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-top: 25px;
+    padding: 25px;
+    box-shadow: 2px 5px 15px black;
+}
+
+.first_content {
+    background: linear-gradient(to bottom, rgb(87, 76, 247),rgb(238, 74, 211));
+}
+.content_img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.content_tittle {
+    color: white;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.content_p {
+    font-size: 20px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.second_content {
+    background: linear-gradient(to bottom, rgb(55, 173, 241), rgb(40, 231, 183));
+}
+
+.second_content h2, .second_content p {
+    text-align: center;
+}
+
+
+.third_content {
+    background: linear-gradient(to bottom, rgb(71, 154, 233), rgb(247, 169, 75));
+}
+
+.third_content h2, .second_content p {
+    text-align: end;
+}
+
+footer {
+   margin-top: 20px;
+   color: white;
+   padding: 15px 30px;
+   background: linear-gradient(to top, rgb(35, 140, 201),rgb(40, 231, 183));
+}
+
+@media screen and (min-width:768px) {
+    .first_content, .second_content, .third_content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .content_p {
+        font-size: 16px;
+    }
+
+    .right {
+        order: 2;
+    }
+
+    .article_container {
+        margin: 10px 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .first_content, .second_content,.third_content {
+     padding: 30px 50px;
+    }
+
+    .content_img {
+        height: 300px;
+        width: 300px;
+        margin: auto 50px;
+    }
+
+    .content_p {
+        font-size: 20px;
+    }
+}
