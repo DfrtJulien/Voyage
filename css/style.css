@@ -4,7 +4,6 @@
 
 body {
     font-family: 'Kufam', cursive;
-    overflow: hidden;
 }
 
 header {
@@ -114,6 +113,12 @@ footer {
 
 footer p {
     margin-bottom: 20px;
+}
+
+.icon_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 @media screen and (min-width:768px) {
