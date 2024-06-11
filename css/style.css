@@ -2,6 +2,11 @@
     margin: 0;
 }
 
+body {
+    font-family: 'Kufam', cursive;
+    overflow: hidden;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -36,7 +41,7 @@ nav a {
 }
 
 .text_anim {
-    animation: text-slide 15s infinite;
+    animation: text-slide 10s linear 1s infinite running;
     white-space: nowrap;
 }
 
@@ -104,7 +109,11 @@ footer {
    padding: 30px;
    background: linear-gradient(to top, rgb(35, 140, 201),rgb(40, 231, 183));
    display: flex;
-   justify-content: space-between;
+   flex-direction: column;
+}
+
+footer p {
+    margin-bottom: 20px;
 }
 
 @media screen and (min-width:768px) {
@@ -127,6 +136,12 @@ footer {
 
     .text_anim {
         animation: text-slide 15s ease infinite;
+    }
+
+    footer {
+       flex-direction: row;
+       justify-content: space-between;
+       margin-bottom: 0;
     }
 }
 
@@ -170,6 +185,6 @@ footer {
         transform: translateX(1500px);
     }
     100% {
-        transform: translateX(-1500px);
+        transform: translateX(-950px);
     }
 }
